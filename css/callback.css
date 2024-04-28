@@ -1,0 +1,133 @@
+.callback {
+	padding-top: 60px;
+	padding-bottom: 120px;
+}
+
+.container--callback {
+	max-width: 780px;
+}
+
+.callback__content-wrapper {
+	padding: 50px 100px;
+	border-radius: 20px;
+	background-color: rgb(242, 240, 241);
+	text-align: center;
+}
+
+.callback__title {
+	color: rgb(255, 138, 0);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+
+.callback__text {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+
+	margin-bottom: 20px;
+}
+
+.callback__text--orange {
+	font-weight: 600;
+	color: #ff8a00;
+}
+
+.callback__contacts {
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+.callback__tel,
+.callback__mail {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width:max-content;
+}
+
+.callback__tel::before,
+.callback__mail::before {
+	content: "";
+
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 17px;
+}
+
+.callback__tel::before {
+	min-width: 18px;
+	min-height: 18px;
+
+	background-image: url("./../img/form/phone.svg");
+	background-repeat: no-repeat;
+}
+
+.callback__mail::before {
+	min-width: 20px;
+	min-height: 16px;
+
+	background-image: url("./../img/form/mail.svg");
+	background-repeat: no-repeat;
+}
+
+.contacts-form__text {
+	margin-bottom: 15px;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 280px;
+}
+
+.input-wrapper+.input-wrapper {
+	margin-top: 20px;
+}
+
+.contacts-form__input-hint {
+	display: block;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 14px;
+	text-align: left;
+}
+
+.contacts-form__phone-input,
+.contacts-form__mail-input {
+	height: 40px;
+	width: 280px;
+}
+
+/* ? Не могу понять почему при использовании last-child стиль не идет к инпуту почты */
+.contacts-form .input-wrapper:last-of-type {
+	margin-bottom: 35px;
+}
+
+.contacts-form__button {
+	padding: 12px 56px;
+	background-color: #282626;
+
+	color: #ff8a00;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	text-transform: uppercase;
+
+	border: #ff000000 solid 2px;
+}
+
+.contacts-form__button:hover {
+	background-color: #ff8a00;
+	color: #282626;
+}
+
+.contacts-form__button:focus {
+	border-color: #ff8a00;
+}
