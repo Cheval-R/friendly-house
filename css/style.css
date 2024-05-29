@@ -1,6 +1,9 @@
 @import url("./normalize.css");
 @import url("./fonts.css");
+@import url("./var.css");
 @import url("./about.css");
 @import url("./global.css");
 @import url("./help.css");
 @import url("./callback.css");
+@import url("./projects.css");
+@import url("./pets.css");

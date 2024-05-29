@@ -80,11 +80,18 @@ iframe {
 
 .container {
 	box-sizing: content-box;
-	max-width: 1200px;
+	max-width: 1180px;
 	margin: 0 auto;
-	padding: 0 130px;
+	padding: 0 15px;
 }
 
 .bold {
 	font-weight: bold;
+}
+
+figure{
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
 }
