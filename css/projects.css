@@ -1,5 +1,5 @@
 .projects {
-	padding: 100px 0 50px;
+	padding: 90px 0;
 	color: var(--black-color);
 }
 
@@ -88,8 +88,8 @@
 
 .more-link::after {
 	content: url("./../img/projects/arrow-icon.svg");
-	/* display: block;
-	width: 26px;*/
+	/* display: block;*/
+	width: 27px;
 	height: 17px;
 }
 

@@ -1,6 +1,5 @@
 .callback {
-	padding-top: 60px;
-	padding-bottom: 120px;
+	padding: 90px 0;
 }
 
 .container--callback {
@@ -36,19 +35,20 @@
 }
 
 .callback__contacts {
+	display: flex;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 
 .callback__tel,
-.callback__mail {	
+.callback__mail {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	width:max-content;
+	width: max-content;
 }
 
 .callback__tel::before,
@@ -77,27 +77,34 @@
 }
 
 .contacts-form__text {
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
-.input-wrapper {
+.inputs-container {
+	gap: 20px;
+	display: flex;
+	margin-bottom: 34px;
+}
+
+
+.input-wrapper input {
+	border: unset;
+}
+
+
+.input-label {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
 	max-width: 280px;
-}
 
-.input-wrapper+.input-wrapper {
-	margin-top: 20px;
-}
-
-.contacts-form__input-hint {
-	display: block;
 	font-size: 12px;
 	font-weight: 300;
 	line-height: 14px;
 	text-align: left;
 }
+
+
 
 .contacts-form__phone-input,
 .contacts-form__mail-input {
@@ -105,29 +112,12 @@
 	width: 280px;
 }
 
-/* ? Не могу понять почему при использовании last-child стиль не идет к инпуту почты */
-.contacts-form .input-wrapper:last-of-type {
-	margin-bottom: 35px;
+.help-button--form::before {
+	width: 66px;
+	height: 57px;
 }
 
-.contacts-form__button {
-	padding: 12px 56px;
-	background-color: #282626;
-
-	color: #ff8a00;
-	font-size: 12px;
-	font-weight: 500;
-	line-height: 16px;
-	text-transform: uppercase;
-
-	border: #ff000000 solid 2px;
-}
-
-.contacts-form__button:hover {
-	background-color: #ff8a00;
-	color: #282626;
-}
-
-.contacts-form__button:focus {
-	border-color: #ff8a00;
+.help-button--form {
+	gap: 11px;
+	font-size: 12px;margin-left: auto;
 }
