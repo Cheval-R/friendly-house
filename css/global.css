@@ -74,8 +74,14 @@ iframe {
 */
 
 .visually-hidden {
-	position: fixed;
-	transform: scale(0);
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip: rect(1px 1px 1px 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }
 
 .container {
@@ -95,6 +101,43 @@ figure {
 	margin-inline-start: 0;
 	margin-inline-end: 0;
 }
+
+.section {
+	padding: 90px 0;
+}
+
+*:focus {
+	outline-color: var(--first);
+}
+
+@media (max-width:1150px) {
+	.container {
+		max-width: 880px;
+	}
+
+	.section {
+		padding: 80px 0 40px;
+	}
+}
+
+@media (max-width:900px) {
+	.container {
+		max-width: 700px;
+	}
+}
+
+@media (max-width:800px) {
+	.section {
+		padding: 60px 0 30px;
+	}
+}
+
+@media (max-width: 600px) {
+	.section {
+		padding: 40px 0 25px;
+	}
+}
+
 
 /* ! HELP BUTTON */
 
