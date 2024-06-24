@@ -76,33 +76,49 @@
 
 .hero__pet-button--boris {
 	&::before {
-		background: {
-			image: url("./../img/hero/boris.png");
-		}
+		background-image: -webkit-image-set(url("./../img/hero/boris.webp") 1x,
+				url("./../img/hero/boris.png") 1x);
+
+		background-image: image-set(url("./../img/hero/boris.webp") 1x,
+				url("./../img/hero/boris.png") 1x);
+
+		background-image: url("./../img/hero/boris.png");
 	}
 }
 
 .hero__pet-button--lui {
 	&::before {
-		background: {
-			image: url("./../img/hero/lui.png");
-		}
+		background-image: -webkit-image-set(url("./../img/hero/lui.webp") 1x,
+				url("./../img/hero/lui.png") 1x);
+
+		background-image: image-set(url("./../img/hero/lui.webp") 1x,
+				url("./../img/hero/lui.png") 1x);
+
+		background-image: url("./../img/hero/lui.png");
 	}
 }
 
 .hero__pet-button--piter {
 	&::before {
-		background: {
-			image: url("./../img/hero/piter.png");
-		}
+		background-image: -webkit-image-set(url("./../img/hero/piter.webp") 1x,
+				url("./../img/hero/piter.png") 1x);
+
+		background-image: image-set(url("./../img/hero/piter.webp") 1x,
+				url("./../img/hero/piter.png") 1x);
+
+		background-image: url("./../img/hero/piter.png");
 	}
 }
 
 .hero__pet-button--kenni {
 	&::before {
-		background: {
-			image: url("./../img/hero/kenni.png");
-		}
+		background-image: -webkit-image-set(url("./../img/hero/kenni.webp") 1x,
+				url("./../img/hero/kenni.png") 1x);
+
+		background-image: image-set(url("./../img/hero/kenni.webp") 1x,
+				url("./../img/hero/kenni.png") 1x);
+
+		background-image: url("./../img/hero/kenni.png");
 	}
 }
 
@@ -118,6 +134,14 @@
 	display: block;
 	content: "";
 	background-image: url("./../img/hero/hero-sarah-buldog.png");
+	background-image: -webkit-image-set(
+			/* 		url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+			url("./../img/hero/hero-sarah-buldog.webp") 1x,
+			url("./../img/hero/hero-sarah-buldog.png") 1x);
+	background-image: image-set(
+			/* url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+			url("./../img/hero/hero-sarah-buldog.webp") 1x,
+			url("./../img/hero/hero-sarah-buldog.png") 1x);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -124,19 +124,22 @@
 		"img-1 img-3";
 }
 
-.help__row-imgs img:nth-child(1) {
+.help__row-imgs picture:nth-child(1),
+.help__row-imgs picture:nth-child(1) img {
 	grid-area: img-1;
 	object-fit: cover;
 	height: 100%;
 }
 
-.help__row-imgs img:nth-child(2) {
+.help__row-imgs picture:nth-child(2),
+.help__row-imgs picture:nth-child(2) img {
 	grid-area: img-2;
 	object-fit: cover;
 	height: 100%;
 }
 
-.help__row-imgs img:nth-child(3) {
+.help__row-imgs picture:nth-child(3),
+.help__row-imgs picture:nth-child(3) img {
 	grid-area: img-3;
 	object-fit: cover;
 	height: 100%;
@@ -159,7 +162,8 @@
 		line-height: 1.44;
 	}
 
-	.help__row-imgs img:nth-child(2) {
+	.help__row-imgs picture:nth-child(2),
+	.help__row-imgs picture:nth-child(2) img {
 		object-fit: cover;
 		height: 100%;
 	}
@@ -177,7 +181,8 @@
 		max-width: 400px;
 	}
 
-	.help__row-imgs--second>img {
+	.help__row-imgs--second>picture,
+	.help__row-imgs--second>picture img {
 		height: 349px;
 		object-fit: cover;
 	}
@@ -202,7 +207,8 @@
 		max-width: 380px;
 	}
 
-	.help__row-imgs--third>img {
+	.help__row-imgs--third>picture,
+	.help__row-imgs--third>picture img {
 		height: 100%;
 	}
 
@@ -243,7 +249,8 @@
 		padding-left: 80px;
 	}
 
-	.help__row-imgs>img {
+	.help__row-imgs>picture,
+	.help__row-imgs>picture img {
 		object-fit: contain;
 	}
 
@@ -264,7 +271,7 @@
 		gap: 30px;
 	}
 
-	.help__row-imgs--second>img {
+	.help__row-imgs--second>picture {
 		height: unset;
 	}
 
@@ -292,4 +299,40 @@
 			"img-1 img-2"
 			"img-1 img-3";
 	}
+}
+
+
+@media (max-width:600px) {
+	// .help__row-imgs {
+	// 	display: flex;
+	// 	height: 131px;
+
+	// 	img {
+	// 		height: auto !important;
+	// 		width: auto;
+	// 		/* Убедитесь, что ширина авто */
+
+	// 		&:nth-child(1) {
+	// 			width: 200px;
+	// 		}
+
+	// 		&:nth-child(2) {
+	// 			width: 170px;
+	// 		}
+
+	// 		&:nth-child(3) {
+	// 			width: 193px;
+	// 		}
+	// 	}
+	// }
+
+	// .slick-slide {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// }
+
+	// .slick-track {
+	// 	display: flex;
+	// }
 }
