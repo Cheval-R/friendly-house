@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Friendly House</title>
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -32,6 +32,15 @@
 
 				<a class="header__tel" href="tel:+78493003957">8 (849) 300 - 39 - 57</a>
 			</div>
+			<nav class="burger-nav" style="display: none;">
+				<ul class="burger__list">
+					<li class="burger__item">О приюте</li>
+					<li class="burger__item">Наши проекты</li>
+					<li class="burger__item">Как ты можешь помочь нам?</li>
+					<li class="burger__item">Наши питомцы</li>
+					<li class="burger__item">Контакты</li>
+				</ul>
+			</nav>
 		</div>
 	</header>
 	<main class="main">
@@ -44,6 +53,20 @@
 						</h2>
 						<button class="help-button help-button--hero" aria-label="Открыть модальное окно">Жми на лапку, чтобы помочь!</button>
 					</div>
+					<ul class="hero__pet-list">
+						<li class="hero__pet-item">
+							<button class="hero__pet-button hero__pet-button--boris">Борис</button>
+						</li>
+						<li class="hero__pet-item">
+							<button class="hero__pet-button hero__pet-button--lui">Луи</button>
+						</li>
+						<li class="hero__pet-item">
+							<button class="hero__pet-button hero__pet-button--piter">Питер</button>
+						</li>
+						<li class="hero__pet-item">
+							<button class="hero__pet-button hero__pet-button--kenni">Кенни</button>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -207,6 +230,51 @@
 						</div>
 					</article>
 					<button class="help-button help-button--center" aria-label="Открыть модальное окно">Жми на лапку, чтобы помочь!</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="section pets">
+			<div class="container">
+				<h3 class="section__title">Наши питомцы</h3>
+
+				<div class="pets__content">
+					<figure class="pets__card pets__card--guinea">
+						<img class="pets__img" src="./img/pets/img-1.jpg" alt="Изображение морских свинок Твинки и Пинки" width="480" height="276" loading="lazy">
+
+						<figcaption class="pets__img-caption">Твинки и Пинки, 2 месяца</figcaption>
+					</figure>
+
+					<figure class="pets__card pets__card--cat">
+						<img class="pets__img" src="./img/pets/img-2.jpg" alt="Изображение кота Мурзика" width="280" height="276" loading="lazy">
+
+						<figcaption class="pets__img-caption">Мурзик, 6 месяцев</figcaption>
+					</figure>
+
+					<figure class="pets__card pets__card--cat-dog">
+						<img class="pets__img" src="./img/pets/img-3.jpg" alt="Изображение кота Миши и пса Ричарда" width="380" height="650" loading="lazy">
+
+						<figcaption class="pets__img-caption">Миша (кот) и Ричард (пёс), <br> 3 года и 5 лет</figcaption>
+					</figure>
+
+					<figure class="pets__card pets__card--parrot">
+						<img class="pets__img" src="./img/pets/img-6.jpg" alt="Изображение попугая Рокки" width="280" height="280" loading="lazy">
+						<img class="pets__img" src="./img/pets/img-7.jpg" alt="Изображение попугая Сени" width="280" height="280" loading="lazy">
+
+						<figcaption class="pets__img-caption">Рокки и Сеня, 2 и 3 года</figcaption>
+					</figure>
+
+					<figure class="pets__card--hamster">
+						<img class="pets__img" src="./img/pets/img-5.jpg" alt="Изображение Твинки и Пинки" width="280" height="280" loading="lazy">
+
+						<figcaption class="pets__img-caption">Джерри, 3 недели</figcaption>
+					</figure>
+
+					<figure class="pets__card pets__card--dog">
+						<img class="pets__img" src="./img/pets/img-4.jpg" alt="Изображение Твинки и Пинки" width="280" height="280" loading="lazy">
+
+						<figcaption class="pets__img-caption">Джек, 1 год</figcaption>
+					</figure>
 				</div>
 			</div>
 		</section>
