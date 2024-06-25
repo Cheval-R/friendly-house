@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Friendly House</title>
-	<link rel="stylesheet" href="./css/index.css">
+	<!-- <link rel="stylesheet" href="./css/index.css"> -->
 	<!-- <script defer src="./libs/jquery-3.7.1.min.js"></script>
 	<script defer src="./libs/jquery-ui.min.js"></script>
 	<script defer src="./libs/inputmask.js"></script>
@@ -13,6 +13,17 @@
 	<script defer src="./libs/just-validate.production.min.js"></script>
 	<script defer src="./libs/slick.min.js"></script> -->
 
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const createLink = url => {
+				const link = document.createElement('link')
+				link.rel = 'stylesheet';
+				link.href = url;
+				document.head.append(link);
+			};
+			createLink('css/index.css');
+		})
+	</script>
 	<script defer src="./js/index.min.js"></script>
 </head>
 
@@ -29,7 +40,15 @@
 				</button>
 
 				<a href="./index.html" class="logo-link" aria-label="Ссыклка на главную страницу приюта FriendlyHouse">
-					<img class="logo-img" src="./img/logo.png" alt="Логотип компании Friendly House">
+
+					<picture>
+						<!-- <source media="(max-width:600px)" srcset="./img/help/img-1-mob.avif" type="image/avif"> -->
+						<!-- <source media="(max-width:600px)" srcset="./img/help/img-1-mob.webp" type="image/webp">
+						<source media="(max-width:600px)" srcset="./img/help/img-1-mob.png" type="image/png"> -->
+						<!-- <source srcset="./img/help/img-1.avif" type="image/avif"> -->
+						<source srcset="./img/logo.webp" type="image/webp">
+						<img class="logo-img" src="./img/logo.png" alt="Логотип компании Friendly House" width="357" height="72">
+					</picture>
 				</a>
 
 
@@ -246,27 +265,27 @@
 						<div class="help__row-imgs slider">
 							<picture>
 								<!-- <source media="(max-width:600px)" srcset="./img/help/img-1-mob.avif" type="image/avif"> -->
-								<source media="(max-width:600px)" srcset="./img/help/img-1-mob.webp" type="image/webp">
-								<source media="(max-width:600px)" srcset="./img/help/img-1-mob.png" type="image/png">
+								<!-- <source media="(max-width:600px)" srcset="./img/help/img-1-mob.webp" type="image/webp">
+								<source media="(max-width:600px)" srcset="./img/help/img-1-mob.png" type="image/png"> -->
 								<!-- <source srcset="./img/help/img-1.avif" type="image/avif"> -->
 								<source srcset="./img/help/img-1.webp" type="image/webp">
-								<img class="slider__item" src="./img/help/img-1.jpg" alt="Кролик с морковкой">
+								<img class="slider__item" src="./img/help/img-1.jpg" alt="Кролик с морковкой" width="300" height="162" loading="lazy">
 							</picture>
 							<picture>
 								<!-- <source media="(max-width:600px)" srcset="./img/help/img-3-mob.avif" type="image/avif"> -->
-								<source media="(max-width:600px)" srcset="./img/help/img-3-mob.webp" type="image/webp">
-								<source media="(max-width:600px)" srcset="./img/help/img-3-mob.png" type="image/png">
+								<!-- <source media="(max-width:600px)" srcset="./img/help/img-3-mob.webp" type="image/webp">
+								<source media="(max-width:600px)" srcset="./img/help/img-3-mob.png" type="image/png"> -->
 								<!-- <source srcset="./img/help/img-3.avif" type="image/avif"> -->
 								<source srcset="./img/help/img-3.webp" type="image/webp">
-								<img class="slider__item" src="./img/help/img-3.jpg" alt="Мопс воротником">
+								<img class="slider__item" src="./img/help/img-3.jpg" alt="Мопс воротником" width="586" height="391" loading="lazy">
 							</picture>
 							<picture>
 								<!-- <source media="(max-width:600px)" srcset="./img/help/img-2-mob.avif" type="image/avif"> -->
-								<source media="(max-width:600px)" srcset="./img/help/img-2-mob.webp" type="image/webp">
-								<source media="(max-width:600px)" srcset="./img/help/img-2-mob.png" type="image/png">
+								<!-- <source media="(max-width:600px)" srcset="./img/help/img-2-mob.webp" type="image/webp">
+								<source media="(max-width:600px)" srcset="./img/help/img-2-mob.png" type="image/png"> -->
 								<!-- <source srcset="./img/help/img-2.avif" type="image/avif"> -->
 								<source srcset="./img/help/img-2.webp" type="image/webp">
-								<img class="slider__item" src="./img/help/img-2.jpg" alt="Собака облизывается">
+								<img class="slider__item" src="./img/help/img-2.jpg" alt="Собака облизывается" width="300" height="209" loading="lazy">
 							</picture>
 
 						</div>
@@ -279,11 +298,11 @@
 							<div class="help__row-imgs help__row-imgs--second">
 								<picture>
 									<!-- <source media="(max-width:600px)" srcset="./img/help/img-4-mob.avif" type="image/avif"> -->
-									<source media="(max-width:600px)" srcset="./img/help/img-4-mob.webp" type="image/webp">
-									<source media="(max-width:600px)" srcset="./img/help/img-4-mob.png" type="image/png">
+									<!-- <source media="(max-width:600px)" srcset="./img/help/img-4-mob.webp" type="image/webp">
+									<source media="(max-width:600px)" srcset="./img/help/img-4-mob.png" type="image/png"> -->
 									<!-- <source srcset="./img/help/img-4.avif" type="image/avif"> -->
 									<source srcset="./img/help/img-4.webp" type="image/webp">
-									<img src="./img/help/img-4.jpg" alt="Хозяин гладит собаку">
+									<img src="./img/help/img-4.jpg" alt="Хозяин гладит собаку" width="700" height="467" loading="lazy">
 								</picture>
 
 							</div>
@@ -312,27 +331,27 @@
 							<div class="help__row-imgs help__row-imgs--third swiper-wrapper">
 								<picture>
 									<!-- <source media="(max-width:600px)" srcset="./img/help/img-5-mob.avif" type="image/avif"> -->
-									<source media="(max-width:600px)" srcset="./img/help/img-5-mob.webp" type="image/webp">
-									<source media="(max-width:600px)" srcset="./img/help/img-5-mob.png" type="image/png">
+									<!-- <source media="(max-width:600px)" srcset="./img/help/img-5-mob.webp" type="image/webp">
+									<source media="(max-width:600px)" srcset="./img/help/img-5-mob.png" type="image/png"> -->
 									<!-- <source srcset="./img/help/img-5.avif" type="image/avif"> -->
 									<source srcset="./img/help/img-5.webp" type="image/webp">
-									<img src="./img/help/img-5.jpg" alt="Кот с желтой банданой">
+									<img src="./img/help/img-5.jpg" alt="Кот с желтой банданой" width="300" height="491" loading="lazy">
 								</picture>
 								<picture>
 									<!-- <source media="(max-width:600px)" srcset="./img/help/img-6-mob.avif" type="image/avif"> -->
-									<source media="(max-width:600px)" srcset="./img/help/img-6-mob.webp" type="image/webp">
-									<source media="(max-width:600px)" srcset="./img/help/img-6-mob.png" type="image/png">
+									<!-- <source media="(max-width:600px)" srcset="./img/help/img-6-mob.webp" type="image/webp">
+									<source media="(max-width:600px)" srcset="./img/help/img-6-mob.png" type="image/png"> -->
 									<!-- <source srcset="./img/help/img-6.avif" type="image/avif"> -->
 									<source srcset="./img/help/img-6.webp" type="image/webp">
-									<img src="./img/help/img-6.jpg" alt="Черная кошка лежит на краю стены и протягивает лапу к человеческой руке, что напоминает сцену из фрески Микеланджело 'Сотворение Адама'.">
+									<img src="./img/help/img-6.jpg" alt="Черная кошка лежит на краю стены и протягивает лапу к человеческой руке, что напоминает сцену из фрески Микеланджело 'Сотворение Адама'." width="380" height="230" loading="lazy">
 								</picture>
 								<picture>
 									<!-- <source media="(max-width:600px)" srcset="./img/help/img-7-mob.avif" type="image/avif"> -->
-									<source media="(max-width:600px)" srcset="./img/help/img-7-mob.webp" type="image/webp">
-									<source media="(max-width:600px)" srcset="./img/help/img-7-mob.png" type="image/png">
+									<!-- <source media="(max-width:600px)" srcset="./img/help/img-7-mob.webp" type="image/webp">
+									<source media="(max-width:600px)" srcset="./img/help/img-7-mob.png" type="image/png"> -->
 									<!-- <source srcset="./img/help/img-7.avif" type="image/avif"> -->
 									<source srcset="./img/help/img-7.webp" type="image/webp">
-									<img src="./img/help/img-7.jpg" alt="Мужчина обнимает улыбающуюся собаку на фоне живописного пейзажа с горами и водоемом">
+									<img src="./img/help/img-7.jpg" alt="Мужчина обнимает улыбающуюся собаку на фоне живописного пейзажа с горами и водоемом" width="380" height="241" loading="lazy">
 								</picture>
 							</div>
 						</div>
@@ -348,38 +367,62 @@
 
 				<div class="pets__content">
 					<figure class="pets__card pets__card--guinea">
-						<img class="pets__img" src="./img/pets/img-1.jpg" alt="Изображение морских свинок Твинки и Пинки" width="480" height="276" loading="lazy">
+						<picture>
+							<source srcset="./img/pets/img-1.webp" type="image/webp">
+
+							<img class="pets__img" src="./img/pets/img-1.jpg" alt="Изображение морских свинок Твинки и Пинки" width="480" height="276" loading="lazy">
+						</picture>
 
 						<figcaption class="pets__img-caption">Твинки и Пинки, 2 месяца</figcaption>
 					</figure>
 
 					<figure class="pets__card pets__card--cat">
-						<img class="pets__img" src="./img/pets/img-2.jpg" alt="Изображение кота Мурзика" width="280" height="276" loading="lazy">
+						<picture>
+							<source srcset="./img/pets/img-2.webp" type="image/webp">
+							<img class="pets__img" src="./img/pets/img-2.jpg" alt="Изображение кота Мурзика" width="280" height="276" loading="lazy">
+						</picture>
 
 						<figcaption class="pets__img-caption">Мурзик, 6 месяцев</figcaption>
 					</figure>
 
 					<figure class="pets__card pets__card--cat-dog">
-						<img class="pets__img" src="./img/pets/img-3.jpg" alt="Изображение кота Миши и пса Ричарда" width="380" height="650" loading="lazy">
+						<picture>
+							<source srcset="./img/pets/img-3.webp" type="image/webp">
+
+							<img class="pets__img" src="./img/pets/img-3.jpg" alt="Изображение кота Миши и пса Ричарда" width="380" height="650" loading="lazy">
+						</picture>
 
 						<figcaption class="pets__img-caption">Миша (кот) и Ричард (пёс), <br> 3 года и 5 лет</figcaption>
 					</figure>
 
 					<figure class="pets__card pets__card--parrot">
-						<img class="pets__img" src="./img/pets/img-6.jpg" alt="Изображение попугая Рокки" width="280" height="280" loading="lazy">
-						<img class="pets__img" src="./img/pets/img-7.jpg" alt="Изображение попугая Сени" width="280" height="280" loading="lazy">
+						<picture>
+							<source srcset="./img/pets/img-6.webp" type="image/webp">
+							<img class="pets__img" src="./img/pets/img-6.jpg" alt="Изображение попугая Рокки" width="280" height="280" loading="lazy">
+						</picture>
+						<picture>
+							<source srcset="./img/pets/img-7.webp" type="image/webp">
+							<img class="pets__img" src="./img/pets/img-7.jpg" alt="Изображение попугая Сени" width="280" height="280" loading="lazy">
+						</picture>
 
 						<figcaption class="pets__img-caption">Рокки и Сеня, 2 и 3 года</figcaption>
 					</figure>
 
 					<figure class="pets__card--hamster">
-						<img class="pets__img" src="./img/pets/img-5.jpg" alt="Изображение Твинки и Пинки" width="280" height="280" loading="lazy">
+						<picture>
+							<source srcset="./img/pets/img-5.webp" type="image/webp">
+
+							<img class="pets__img" src="./img/pets/img-5.jpg" alt="Изображение Твинки и Пинки" width="280" height="280" loading="lazy">
+						</picture>
 
 						<figcaption class="pets__img-caption">Джерри, 3 недели</figcaption>
 					</figure>
 
 					<figure class="pets__card pets__card--dog">
-						<img class="pets__img" src="./img/pets/img-4.jpg" alt="Изображение Твинки и Пинки" width="280" height="280" loading="lazy">
+						<picture>
+							<source srcset="./img/pets/img-4.webp" type="image/webp">
+							<img class="pets__img" src="./img/pets/img-4.jpg" alt="Изображение Твинки и Пинки" width="280" height="280" loading="lazy">
+						</picture>
 
 						<figcaption class="pets__img-caption">Джек, 1 год</figcaption>
 					</figure>

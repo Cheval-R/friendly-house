@@ -38,20 +38,45 @@
 	background-size: cover;
 }
 
+
 .article-card:nth-child(1):before {
 	background-image: url("./../img/projects/img-1.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-1.webp") 1x,
+			url("./../img/projects/img-1.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-1.webp") 1x,
+			url("./../img/projects/img-1.jpg") 1x);
 }
 
 .article-card:nth-child(2):before {
 	background-image: url("./../img/projects/img-2.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-2.webp") 1x,
+			url("./../img/projects/img-2.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-2.webp") 1x,
+			url("./../img/projects/img-2.jpg") 1x);
 }
 
 .article-card:nth-child(3):before {
 	background-image: url("./../img/projects/img-3.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-3.webp") 1x,
+			url("./../img/projects/img-3.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-3.webp") 1x,
+			url("./../img/projects/img-3.jpg") 1x);
 }
 
 .article-card:nth-child(4):before {
 	background-image: url("./../img/projects/img-4.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-4.webp") 1x,
+			url("./../img/projects/img-4.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-4.webp") 1x,
+			url("./../img/projects/img-4.jpg") 1x);
 }
 
 .article-card__content {
@@ -164,52 +189,124 @@
 
 .more-projects__img:nth-child(1) {
 	background-image: url("./../img/projects/img-6.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-6.webp") 1x,
+			url("./../img/projects/img-6.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-6.webp") 1x,
+			url("./../img/projects/img-6.jpg") 1x);
 }
 
 .more-projects__img:nth-child(2) {
 	background-image: url("./../img/projects/img-7.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-7.webp") 1x,
+			url("./../img/projects/img-7.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-7.webp") 1x,
+			url("./../img/projects/img-7.jpg") 1x);
 
 }
 
 .more-projects__img:nth-child(3) {
 	background-image: url("./../img/projects/img-8.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-8.webp") 1x,
+			url("./../img/projects/img-8.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-8.webp") 1x,
+			url("./../img/projects/img-8.jpg") 1x);
 }
 
 .more-projects__img:nth-child(4) {
 	background-image: url("./../img/projects/img-9.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-9.webp") 1x,
+			url("./../img/projects/img-9.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-9.webp") 1x,
+			url("./../img/projects/img-9.jpg") 1x);
 }
 
 .more-projects__img:nth-child(5) {
 	background-image: url("./../img/projects/img-10.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-10.webp") 1x,
+			url("./../img/projects/img-10.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-10.webp") 1x,
+			url("./../img/projects/img-10.jpg") 1x);
 
 }
 
 .more-projects__img:nth-child(6) {
 	background-image: url("./../img/projects/img-11.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-11.webp") 1x,
+			url("./../img/projects/img-11.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-11.webp") 1x,
+			url("./../img/projects/img-11.jpg") 1x);
 }
 
 .more-projects__img:nth-child(7) {
 	background-image: url("./../img/projects/img-12.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-12.webp") 1x,
+			url("./../img/projects/img-12.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-12.webp") 1x,
+			url("./../img/projects/img-12.jpg") 1x);
 }
 
 .more-projects__img:nth-child(8) {
 	background-image: url("./../img/projects/img-13.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-3.webp") 1x,
+			url("./../img/projects/img-13.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-13.webp") 1x,
+			url("./../img/projects/img-13.jpg") 1x);
 }
 
 .more-projects__img:nth-child(9) {
 	background-image: url("./../img/projects/img-14.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-14.webp") 1x,
+			url("./../img/projects/img-14.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-14.webp") 1x,
+			url("./../img/projects/img-14.jpg") 1x);
 }
 
 .more-projects__img:nth-child(10) {
 	background-image: url("./../img/projects/img-15.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-15.webp") 1x,
+			url("./../img/projects/img-15.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-15.webp") 1x,
+			url("./../img/projects/img-15.jpg") 1x);
 }
 
 .more-projects__img:nth-child(11) {
 	background-image: url("./../img/projects/img-16.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-16.webp") 1x,
+			url("./../img/projects/img-16.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-16.webp") 1x,
+			url("./../img/projects/img-16.jpg") 1x);
 }
 
 .more-projects__img:nth-child(12) {
 	background-image: url("./../img/projects/img-17.jpg");
+	background-image:
+		-webkit-image-set(url("./../img/projects/img-17.webp") 1x,
+			url("./../img/projects/img-17.jpg") 1x);
+
+	background-image: image-set(url("./../img/projects/img-17.webp") 1x,
+			url("./../img/projects/img-17.jpg") 1x);
 }
 
 .more-link--mobile {

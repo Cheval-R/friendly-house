@@ -33,7 +33,7 @@
 		font-size: 14px;
 	}
 
-	@media (max-width :600px) {
+	@media (max-width :550px) {
 		flex-direction: row;
 		gap: 10px;
 		margin-bottom: 98px;
@@ -67,7 +67,7 @@
 		}
 	}
 
-	@media (max-width:600px) {
+	@media (max-width:550px) {
 		flex-direction: column;
 		gap: 5px;
 	}
@@ -76,49 +76,52 @@
 
 .hero__pet-button--boris {
 	&::before {
-		background-image: -webkit-image-set(url("./../img/hero/boris.webp") 1x,
-				url("./../img/hero/boris.png") 1x);
-
-		background-image: image-set(url("./../img/hero/boris.webp") 1x,
-				url("./../img/hero/boris.png") 1x);
-
+		
 		background-image: url("./../img/hero/boris.png");
+		background-image:
+			-webkit-image-set(
+				url("./../img/hero/boris.webp") 1x,
+				url("./../img/hero/boris.png") 1x);
+
+		background-image: image-set(
+			url("./../img/hero/boris.webp") 1x,
+				url("./../img/hero/boris.png") 1x);
 	}
 }
 
 .hero__pet-button--lui {
 	&::before {
+		
+		background-image: url("./../img/hero/lui.png");
 		background-image: -webkit-image-set(url("./../img/hero/lui.webp") 1x,
 				url("./../img/hero/lui.png") 1x);
 
 		background-image: image-set(url("./../img/hero/lui.webp") 1x,
 				url("./../img/hero/lui.png") 1x);
-
-		background-image: url("./../img/hero/lui.png");
 	}
 }
 
 .hero__pet-button--piter {
 	&::before {
+		
+		background-image: url("./../img/hero/piter.png");
 		background-image: -webkit-image-set(url("./../img/hero/piter.webp") 1x,
 				url("./../img/hero/piter.png") 1x);
 
 		background-image: image-set(url("./../img/hero/piter.webp") 1x,
 				url("./../img/hero/piter.png") 1x);
-
-		background-image: url("./../img/hero/piter.png");
 	}
 }
 
 .hero__pet-button--kenni {
 	&::before {
+		
+		background-image: url("./../img/hero/kenni.png");
 		background-image: -webkit-image-set(url("./../img/hero/kenni.webp") 1x,
 				url("./../img/hero/kenni.png") 1x);
 
 		background-image: image-set(url("./../img/hero/kenni.webp") 1x,
 				url("./../img/hero/kenni.png") 1x);
-
-		background-image: url("./../img/hero/kenni.png");
 	}
 }
 
@@ -247,7 +250,7 @@
 }
 
 
-@media (max-width:600px) {
+@media (max-width:550px) {
 	.hero__content {
 		flex-direction: column;
 		justify-content: space-between;

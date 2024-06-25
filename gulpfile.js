@@ -10,11 +10,15 @@ import terser from 'gulp-terser';
 import concat from 'gulp-concat';
 import sourceMaps from 'gulp-sourcemaps';
 import gulpIMG from 'gulp-image';
-import gulpWebp from 'gulp-webp'
-// import gulpAvif from 'gulp-avif'
+import gulpWebp from 'gulp-webp';
+// import gulpAvif from 'gulp-avi;f'
+import { stream as critical } from 'critical';
+import gulpif from 'gulp-if';
 
 
 const prepros = true;
+
+let dev = false;
 
 const sass = gulpSass(sassPkg);
 
@@ -44,7 +48,7 @@ export const style = () => {
 	if (prepros) {
 		return gulp
 			.src('src/scss/**/*.scss') // Следим за SCSS файлами
-			.pipe(sourceMaps.init())
+			.pipe(gulpif(dev, sourceMaps.init()))
 			.pipe(sass().on('error', sass.logError))
 			.pipe(cleanCSS({
 				2: {
@@ -52,13 +56,13 @@ export const style = () => {
 				}
 
 			}))
-			.pipe(sourceMaps.write('./../maps'))
+			.pipe(gulpif(dev, sourceMaps.write('./../maps')))
 			.pipe(gulp.dest('dist/css'))
 			.pipe(browserSync.stream());
 	}
 	return gulp
 		.src('src/css/index.css')
-		.pipe(sourceMaps.init())
+		.pipe(gulpif(dev, sourceMaps.init()))
 		.pipe(gulpCssimport({
 			extensions: ['css'],
 		}))
@@ -67,7 +71,7 @@ export const style = () => {
 				specialComments: 0
 			}
 		}))
-		.pipe(sourceMaps.write('./../maps'))
+		.pipe(gulpif(dev, sourceMaps.write('./../maps')))
 		.pipe(gulp.dest('dist/css'))
 		.pipe(browserSync.stream());
 }
@@ -75,10 +79,10 @@ export const style = () => {
 export const js = () =>
 	gulp
 		.src([...allJS, 'src/js/**/*.js'])
-		.pipe(sourceMaps.init())
+		.pipe(gulpif(dev, sourceMaps.init()))
 		.pipe(terser())
 		.pipe(concat('index.min.js'))
-		.pipe(sourceMaps.write('./../maps'))
+		.pipe(gulpif(dev, sourceMaps.write('./../maps')))
 		.pipe(gulp.dest('dist/js'))
 		.pipe(browserSync.stream());
 
@@ -88,7 +92,7 @@ export const img = () =>
 			{
 				encoding: false,
 			})
-		.pipe(gulpIMG(
+		.pipe(gulpif(!dev, gulpIMG(
 			{
 				optipng: ['-i 1', '-strip all', '-fix', '-o7', '-force'],
 				pngquant: ['--speed=1', '--force', 256],
@@ -98,17 +102,17 @@ export const img = () =>
 				gifsicle: ['--optimize'],
 				svgo: true,
 			}
-		))
+		)))
 		.pipe(gulp.dest('dist/img'))
 		.pipe(browserSync.stream());
 
 export const webp = () =>
 	gulp
-		.src('src/img/**/*.{jpg,jpeg,png}',			{
+		.src('src/img/**/*.{jpg,jpeg,png}', {
 			encoding: false,
 		})
 		.pipe(gulpWebp({
-			quality: 60
+			quality: 80
 		}))
 		.pipe(gulp.dest('dist/img'))
 		.pipe(browserSync.stream());
@@ -117,10 +121,23 @@ export const webp = () =>
 // 	gulp
 // 		.src('src/img/**/*.{png,jpg,svg}',			{
 // 	encoding: false,
-			// })
+// })
 // 		.pipe(gulpAvif())
 // 		.pipe(gulp.dest('dist/img'))
 // 		.pipe(browserSync.stream());
+
+export const critCSS = () =>
+	gulp
+		.src('dist/*.html')
+		.pipe(critical({
+			base: 'dist/',
+			inline: true,
+			css: ['dist/css/index.css']
+		}))
+		.on('error', err => {
+			console.error(err.message);
+		})
+		.pipe(gulp.dest('dist'));
 
 export const copy = () =>
 	gulp
@@ -160,9 +177,12 @@ export const clear = (done) => {
 };
 
 // Запуск
+export const develop = async () => {
+	dev = true;
+}
 
 export const base = gulp.parallel(html, style, js, img, webp, copy);
 
-export const build = gulp.series(clear, base);
+export const build = gulp.series(clear, base, critCSS, server);
 
-export default gulp.series(base, server);
+export default gulp.series(develop, base, server);
