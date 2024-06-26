@@ -29,6 +29,7 @@ const allJS = [
 	"src/libs/jquery-ui.min.js",
 	"src/libs/just-validate.production.min.js",
 	"src/libs/just-validate-plugin-date.production.min.js",
+	"src/libs/slick.min.js",
 ]
 
 // Задачи

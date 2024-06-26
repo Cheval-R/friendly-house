@@ -7,7 +7,7 @@
 .callback__content-wrapper {
 	max-width: 780px;
 	margin: 0 auto;
-	padding: 50px 100px;
+	padding: 50px 93px;
 	border-radius: 20px;
 	background-color: rgb(242, 240, 241);
 	text-align: center;
@@ -45,8 +45,8 @@
 	margin-bottom: 60px;
 }
 
-.callback__tel,
-.callback__mail {
+.tel,
+.mail {
 	display: flex;
 	justify-content: space-between;
 	gap: 17px;
@@ -55,15 +55,15 @@
 	width: max-content;
 }
 
-.callback__tel::before,
-.callback__mail::before {
+.tel::before,
+.mail::before {
 	content: "";
 
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.callback__tel::before {
+.tel::before {
 	min-width: 18px;
 	min-height: 18px;
 
@@ -71,7 +71,7 @@
 	background-repeat: no-repeat;
 }
 
-.callback__mail::before {
+.mail::before {
 	min-width: 20px;
 	min-height: 16px;
 
@@ -148,6 +148,11 @@
 		margin-bottom: 40px;
 	}
 
+	.callback__text {
+		max-width: 480px;
+		
+	}
+
 	.callback__text,
 	.callback__contacts,
 	.contacts-form__text {
@@ -155,8 +160,8 @@
 		line-height: 1.33;
 	}
 
-	.callback__tel,
-	.callback__mail {
+	.tel,
+	.mail {
 		gap: 10px;
 	}
 

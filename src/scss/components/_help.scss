@@ -256,8 +256,8 @@
 
 	.help__row-imgs {
 		align-self: center;
-		grid-template-columns: 300px 380px;
-		grid-template-rows: 162px 209px;
+		grid-template-columns: clamp(180px, 39vw, 300px) clamp(200px, 50vw, 380px);
+		grid-template-rows: clamp(100px, 22vw, 162px) clamp(150px, 28vw, 209px);
 		grid-template-areas:
 			"img-1 img-2"
 			"img-3 img-2";
@@ -293,8 +293,8 @@
 	}
 
 	.help__row-imgs--third {
-		grid-template-columns: 300px 380px;
-		grid-template-rows: 230px 241px;
+		grid-template-columns: clamp(180px, 39vw, 300px) clamp(200px, 50vw, 380px);
+		grid-template-rows: clamp(150px, 30vw, 230px) clamp(160px, 31vw, 241px);
 		grid-template-areas:
 			"img-1 img-2"
 			"img-1 img-3";
@@ -306,7 +306,10 @@
 	.help__row-imgs {
 		&::-webkit-scrollbar {
 			display: none;
-		}	
+		}
+
+
+
 		// margin-left: 25px;
 		margin-right: -25px;
 		display: block;
@@ -327,6 +330,10 @@
 					width: 200px;
 				}
 			}
+		}
+
+		&--second {
+			margin: 0;
 		}
 
 		&--third {

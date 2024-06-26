@@ -1,6 +1,7 @@
-:root{
+:root {
 	scroll-behavior: smooth;
 }
+
 body {
 	position: relative;
 	overflow-x: hidden;
@@ -109,8 +110,22 @@ figure {
 	padding: 90px 0;
 }
 
+* {
+	outline: 1px solid rgba($color: #000000, $alpha: 0.0);
+
+	transition: outline-color 0.3s ease-in;
+}
+
 *:focus {
 	outline-color: var(--first);
+}
+
+a {
+	transition: color 0.3s ease-in;
+}
+
+a:hover {
+	color: var(--first);
 }
 
 @media (max-width:1150px) {

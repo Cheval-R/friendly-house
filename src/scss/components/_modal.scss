@@ -59,3 +59,19 @@
 .modal__close:active {
 	color: #840AA3;
 }
+
+
+
+.just-validate-error-label {
+	@media (max-width:1100px) {
+		font-size: 18px;
+	}
+
+	@media (max-width:800px) {
+		font-size: 16px;
+	}
+
+	@media (max-width:600px) {
+		font-size: 14px;
+	}
+}

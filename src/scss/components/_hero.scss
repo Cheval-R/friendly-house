@@ -1,3 +1,7 @@
+.hero {
+	padding: 0;
+}
+
 .hero__content {
 	position: relative;
 	font-family: 'Comfortaa';
@@ -33,7 +37,8 @@
 		font-size: 14px;
 	}
 
-	@media (max-width :550px) {
+	@media (max-width :560px) {
+		align-self: center;
 		flex-direction: row;
 		gap: 10px;
 		margin-bottom: 98px;
@@ -61,13 +66,14 @@
 			repeat: no-repeat;
 		}
 
+
 		@media (max-width:800px) {
 			width: 60px;
 			height: 60px;
 		}
 	}
 
-	@media (max-width:550px) {
+	@media (max-width:560px) {
 		flex-direction: column;
 		gap: 5px;
 	}
@@ -76,22 +82,20 @@
 
 .hero__pet-button--boris {
 	&::before {
-		
+
 		background-image: url("./../img/hero/boris.png");
 		background-image:
-			-webkit-image-set(
-				url("./../img/hero/boris.webp") 1x,
+			-webkit-image-set(url("./../img/hero/boris.webp") 1x,
 				url("./../img/hero/boris.png") 1x);
 
-		background-image: image-set(
-			url("./../img/hero/boris.webp") 1x,
+		background-image: image-set(url("./../img/hero/boris.webp") 1x,
 				url("./../img/hero/boris.png") 1x);
 	}
 }
 
 .hero__pet-button--lui {
 	&::before {
-		
+
 		background-image: url("./../img/hero/lui.png");
 		background-image: -webkit-image-set(url("./../img/hero/lui.webp") 1x,
 				url("./../img/hero/lui.png") 1x);
@@ -103,7 +107,7 @@
 
 .hero__pet-button--piter {
 	&::before {
-		
+
 		background-image: url("./../img/hero/piter.png");
 		background-image: -webkit-image-set(url("./../img/hero/piter.webp") 1x,
 				url("./../img/hero/piter.png") 1x);
@@ -115,13 +119,30 @@
 
 .hero__pet-button--kenni {
 	&::before {
-		
+
 		background-image: url("./../img/hero/kenni.png");
 		background-image: -webkit-image-set(url("./../img/hero/kenni.webp") 1x,
 				url("./../img/hero/kenni.png") 1x);
 
 		background-image: image-set(url("./../img/hero/kenni.webp") 1x,
 				url("./../img/hero/kenni.png") 1x);
+	}
+}
+
+.hero__pet-item--sarah {
+	display: none;
+}
+
+.hero__pet-button--sarah {
+
+	&::before {
+
+		background-image: url("./../img/hero/sarah-small.png");
+		background-image: -webkit-image-set(url("./../img/hero/sarah-small.webp") 1x,
+				url("./../img/hero/sarah-small.png") 1x);
+
+		background-image: image-set(url("./../img/hero/sarah-small.webp") 1x,
+				url("./../img/hero/sarah-small.png") 1x);
 	}
 }
 
@@ -136,24 +157,97 @@
 	text-align: center;
 	display: block;
 	content: "";
-	background-image: url("./../img/hero/hero-sarah-buldog.png");
-	background-image: -webkit-image-set(
-			/* 		url("./../img/hero/hero-sarah-buldog.avif") 1x, */
-			url("./../img/hero/hero-sarah-buldog.webp") 1x,
-			url("./../img/hero/hero-sarah-buldog.png") 1x);
-	background-image: image-set(
-			/* url("./../img/hero/hero-sarah-buldog.avif") 1x, */
-			url("./../img/hero/hero-sarah-buldog.webp") 1x,
-			url("./../img/hero/hero-sarah-buldog.png") 1x);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 580px;
 	width: 580px;
+	transition: background-image 0.3s ease-in;
 
 	@media (max-width:800px) {
 		bottom: 0;
 	}
+}
+
+.hero__content--sarah::after {
+	background-image: var(--bg-hero-img);
+	// background-image: -webkit-image-set(
+	// 		/* 		url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/hero-sarah-buldog.webp") 1x,
+	// 		url("./../img/hero/hero-sarah-buldog.png") 1x);
+	// background-image: image-set(
+	// 		/* url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/hero-sarah-buldog.webp") 1x,
+	// 		url("./../img/hero/hero-sarah-buldog.png") 1x);
+}
+
+.hero__content--boris::after {
+	background-image: var(--bg-hero-img);
+	// background-image: url("./../img/hero/boris-main.png");
+	// background-image: -webkit-image-set(
+	// 		/* 		url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/boris-main.webp") 1x,
+	// 		url("./../img/hero/boris-main.png") 1x);
+	// background-image: image-set(
+	// 		/* url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/boris-main.webp") 1x,
+	// 		url("./../img/hero/boris-main.png") 1x);
+}
+
+.hero__content--lui::after {
+	background-image: var(--bg-hero-img);
+
+	// background-image: url("./../img/hero/lui-main.png");
+	// background-image: -webkit-image-set(
+	// 		/* 		url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/lui-main.webp") 1x,
+	// 		url("./../img/hero/lui-main.png") 1x);
+	// background-image: image-set(
+	// 		/* url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/lui-main.webp") 1x,
+	// 		url("./../img/hero/lui-main.png") 1x);
+}
+
+.hero__content--kenni::after {
+	background-image: var(--bg-hero-img);
+
+	// background-image: url("./../img/hero/kenni-main.png");
+	// background-image: -webkit-image-set(
+	// 		/* 		url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/kenni-main.webp") 1x,
+	// 		url("./../img/hero/kenni-main.png") 1x);
+	// background-image: image-set(
+	// 		/* url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/kenni-main.webp") 1x,
+	// 		url("./../img/hero/kenni-main.png") 1x);
+}
+
+.hero__content--piter::after {
+	background-image: var(--bg-hero-img);
+
+	// background-image: url("./../img/hero/piter-main.png");
+	// background-image: -webkit-image-set(
+	// 		/* 		url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/piter-main.webp") 1x,
+	// 		url("./../img/hero/piter-main.png") 1x);
+	// background-image: image-set(
+	// 		/* url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/piter-main.webp") 1x,
+	// 		url("./../img/hero/piter-main.png") 1x);
+}
+
+.hero__content--peter::after {
+	background-image: var(--bg-hero-img);
+
+	// background-image: url("./../img/hero/peter-main.png");
+	// background-image: -webkit-image-set(
+	// 		/* 		url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/peter-main.webp") 1x,
+	// 		url("./../img/hero/peter-main.png") 1x);
+	// background-image: image-set(
+	// 		/* url("./../img/hero/hero-sarah-buldog.avif") 1x, */
+	// 		url("./../img/hero/peter-main.webp") 1x,
+	// 		url("./../img/hero/peter-main.png") 1x);
 }
 
 .hero__text-content {
@@ -182,17 +276,16 @@
 
 @media (max-width:1100px) {
 	.hero__text-content {
-		flex-basis: 300px;
+		flex-basis: 350px;
 	}
 
 	.hero__content {
 		height: 450px;
-		max-width: 780px;
 	}
 
 	.hero__content::after {
-		width: 450px;
-		height: 450px;
+		width: 416px;
+		height: 416px;
 	}
 
 	.big-orange-text {
@@ -245,12 +338,12 @@
 	.help-button--hero {
 		position: absolute;
 		bottom: 171px;
-		left: clamp(20px, 5.42vw, 80px);
+		left: 0;
 	}
 }
 
 
-@media (max-width:550px) {
+@media (max-width:560px) {
 	.hero__content {
 		flex-direction: column;
 		justify-content: space-between;
