@@ -1246,7 +1246,7 @@ a:hover {
 
 .projects {
   padding: 90px 0;
-  color: var(--black-color);
+  color: #282626;
 }
 
 .section__title {
@@ -1337,7 +1337,7 @@ a:hover {
   display: flex;
   gap: 17px;
   align-items: center;
-  color: var(--orange-color);
+  color: #FF8A00;
   font-weight: 500;
   max-width: -moz-max-content;
   max-width: max-content;
