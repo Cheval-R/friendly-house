@@ -53,6 +53,19 @@
 	align-items: center;
 	/* margin: 0 auto; */
 	width: max-content;
+
+	outline-color: $opacity-color;
+
+	transition: outline 0.3s ease-in;
+	transition: color 0.3s ease-in;
+
+	&:hover {
+		color: $first;
+	}
+
+	&:focus {
+		outline: 1px solid $first;
+	}
 }
 
 .tel::before,
@@ -100,7 +113,19 @@
 }
 
 .input-wrapper input {
-	border: unset;
+	transition: outline 0.3s ease-in;
+	outline: 1px solid $opacity-color;
+	border: none;
+
+	&:hover {
+		outline-color: #CBCBCB;
+	}
+
+	&:focus,
+	&:active {
+		outline-color: $second;
+	}
+
 }
 
 
@@ -150,7 +175,7 @@
 
 	.callback__text {
 		max-width: 480px;
-		
+
 	}
 
 	.callback__text,

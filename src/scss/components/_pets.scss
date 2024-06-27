@@ -335,7 +335,7 @@
 
 			background: {
 				image: url('./../../img/pets/slider-arrow.svg');
-				color: var(--first);
+				color: $first;
 				position: center;
 				repeat: no-repeat;
 				// size: cover;

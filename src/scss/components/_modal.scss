@@ -31,13 +31,13 @@
 }
 
 .modal__close {
-	color: var(--second);
+	color: $second;
 	position: absolute;
 	top: 17px;
 	right: 21px;
 
 	outline-offset: 5px;
-	outline: 1px solid var(--opacity-color);
+	outline: 1px solid $opacity-color;
 	transition: color 0.25s ease-in, outline-color 0.25s ease-in;
 
 	@media (max-width:600px) {

@@ -1,11 +1,8 @@
-:root{
+:root {
 	--bg-hero-img: url("./../img/hero/sarah-main.png");
-	--black-color: #282626;
-	--orange-color: #FF8A00;
-	--grey-color: #F2F0F1;
-	--first: #FF8A00;
-	--second:#282626;
-	--fourth: #F2F0F1 ;
 }
 
-
+$first: #FF8A00;
+$second: #282626;
+$fourth: #F2F0F1;
+$opacity-color: rgba(255, 255, 255, 0)

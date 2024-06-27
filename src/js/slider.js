@@ -11,8 +11,8 @@ if (document.documentElement.clientWidth < 800) {
 	});
 	
 	// Добавляем атрибут aria-label
-	var arrowPrev = $('.slick-prev');
+	let arrowPrev = $('.slick-prev');
 	arrowPrev.attr('aria-label', 'Предыдущий слайд');
-	var arrowNext = $('.slick-next');
+	let arrowNext = $('.slick-next');
 	arrowNext.attr('aria-label', 'Следующий слайд');
 }

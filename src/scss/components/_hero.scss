@@ -9,9 +9,21 @@
 	justify-content: space-between;
 	height: 580px;
 
+
 	@media (max-width:800px) {
 		justify-content: flex-start;
 		gap: 90px;
+	}
+
+
+	&:hover::after {
+		// .help-button:hover::before {
+		/* background-image: none; */
+		/* background-image: url("./../img/icons/paw-hover.png"); */
+		filter: drop-shadow(0 0px 15px $first);
+		/* filter: drop-shadow(0px 4px 6px 0px $first); */
+		/* box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25); */
+		// }
 	}
 }
 
@@ -47,12 +59,32 @@
 
 .hero__pet-item {
 	width: max-content;
+	transition: filter 0.5s ease;
+
+	&:hover {
+		// .help-button:hover::before {
+		/* background-image: none; */
+		/* background-image: url("./../img/icons/paw-hover.png"); */
+		filter: drop-shadow(0 0px 15px $first);
+		/* filter: drop-shadow(0px 4px 6px 0px $first); */
+		/* box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25); */
+		// }
+	}
 }
+
 
 .hero__pet-button {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	transition: outline 0.3s ease-in;
+
+
+	outline-color: $opacity-color;
+
+	&:focus {
+		outline: 1px solid $first;
+	}
 
 	&::before {
 		content: "";
@@ -65,6 +97,8 @@
 			size: cover;
 			repeat: no-repeat;
 		}
+
+
 
 
 		@media (max-width:800px) {
@@ -164,9 +198,14 @@
 	width: 580px;
 	transition: background-image 0.3s ease-in;
 
+	transition: filter 0.5s ease;
+
+
+
 	@media (max-width:800px) {
 		bottom: 0;
 	}
+
 }
 
 .hero__content--sarah::after {
@@ -264,11 +303,11 @@
 }
 
 .orange-text {
-	color: var(--first);
+	color: $first;
 }
 
 .big-orange-text {
-	color: var(--first);
+	color: $first;
 	font-size: 60px;
 	font-weight: 400;
 	line-height: 60px;

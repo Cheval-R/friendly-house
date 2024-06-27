@@ -14,7 +14,7 @@ body {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
 	font-size: 20px;
-	color: var(--second);
+	color: $second;
 	background-color: #fff;
 	font-weight: 300;
 }
@@ -110,22 +110,13 @@ figure {
 	padding: 90px 0;
 }
 
-* {
-	outline: 1px solid rgba($color: #000000, $alpha: 0.0);
-
-	transition: outline-color 0.3s ease-in;
-}
-
-*:focus {
-	outline-color: var(--first);
-}
 
 a {
 	transition: color 0.3s ease-in;
 }
 
 a:hover {
-	color: var(--first);
+	color: $first;
 }
 
 @media (max-width:1150px) {
@@ -181,7 +172,7 @@ a:hover {
 	justify-content: center;
 	gap: 17px;
 
-	color: var(--first);
+	color: $first;
 	font-family: 'Helvetica Neue Cyr';
 	font-size: 14px;
 	font-weight: 500;
@@ -189,6 +180,14 @@ a:hover {
 	text-align: center;
 	text-transform: uppercase;
 	max-width: 180px;
+
+	outline-color: $opacity-color;
+
+	transition: outline 0.3s ease-in;
+
+	&:focus {
+		outline: 1px solid $first;
+	}
 }
 
 /* .help-button::after .help-button:hover  { */
@@ -196,8 +195,8 @@ a:hover {
 .help-button:hover::before {
 	/* background-image: none; */
 	/* background-image: url("./../img/icons/paw-hover.png"); */
-	filter: drop-shadow(0 4px 6px var(--first));
-	/* filter: drop-shadow(0px 4px 6px 0px var(--first)); */
+	filter: drop-shadow(0 4px 6px $first);
+	/* filter: drop-shadow(0px 4px 6px 0px $first); */
 	/* box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25); */
 }
 

@@ -70,6 +70,7 @@ petList.on('click', petButton, function (event) {
 		checkImg(event);
 		console.log(event.target);
 		root.style.setProperty("--bg-hero-img", 'url("./../img/hero/boris-main.png")');
+
 		setTimeout(() => {
 			heroImg.attr('class', 'hero__content hero__content--boris');
 			nameTitle.text('Борис ждёт');

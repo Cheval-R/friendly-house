@@ -1,5 +1,5 @@
 .footer {
-	background-color: var(--second);
+	background-color: $second;
 	color: #fff;
 
 	&__information {
@@ -160,6 +160,11 @@
 		font-size: 14px;
 		line-height: 1.14;
 
+		& a:focus {
+			outline: none;
+			color: #F4972A
+		}
+
 		@media (max-width:600px) {
 			font-size: 8px;
 			line-height: 1.5;
@@ -202,7 +207,16 @@
 	&__item {}
 
 	&__link {
-		color: var(--first);
+		color: $first;
+
+		&:hover {
+			color: #F4972A;
+		}
+
+		&:focus {
+			outline: none;
+			color: #F4972A;
+		}
 
 		&--vk {}
 
@@ -236,4 +250,10 @@
 .ymaps3x0--marker-layer {
 	width: 39px !important;
 	height: 59px;
+}
+
+.ymaps3x0--map-copyrights,
+.ymaps3x0--map-copyrights_bottom,
+.ymaps3x0--map-copyrights_right {
+	display: none !important;
 }
