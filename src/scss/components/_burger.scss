@@ -6,7 +6,7 @@
 	height: 421px;
 	background-color: #F2F0F1;
 	clip-path: polygon(0% 0%, 52px 27px, 52px 27px, 100% 27px, 100% 100%, 0% 100%);
-	padding: 100px 40px 50px 20px;
+	padding: 70px 40px 50px 20px;
 
 	border-bottom: 10px solid var(--first);
 
@@ -70,7 +70,7 @@
 	}
 
 	&__item {
-		padding: 20px;
+		padding: 15px 20px;
 
 		@media (max-width:1100px) {
 			padding: 10px 20px 16px;

@@ -78,7 +78,7 @@ petList.on('click', petButton, function (event) {
 			$('.hero__pet-button--kenni').parent().css('order', '2');
 			$('.hero__pet-button--sarah').parent().css('order', '3');
 			$('.hero__pet-button--boris').parent().css('order', '4');
-		}, 300);
+		}, document.documentElement.clientWidth < 600 ? 0 : 300);
 	}
 	else if ($(event.target).hasClass('hero__pet-button--piter')) {
 		checkImg(event);
@@ -91,7 +91,7 @@ petList.on('click', petButton, function (event) {
 			$('.hero__pet-button--boris').parent().css('order', '2');
 			$('.hero__pet-button--lui').parent().css('order', '3');
 			$('.hero__pet-button--piter').parent().css('order', '4');
-		}, 300);
+		}, document.documentElement.clientWidth < 600 ? 0 : 300);
 	}
 	else if ($(event.target).hasClass('hero__pet-button--lui')) {
 		checkImg(event);
@@ -104,7 +104,7 @@ petList.on('click', petButton, function (event) {
 			$('.hero__pet-button--sarah').parent().css('order', '2');
 			$('.hero__pet-button--boris').parent().css('order', '3');
 			$('.hero__pet-button--lui').parent().css('order', '4');
-		}, 300);
+		}, document.documentElement.clientWidth < 600 ? 0 : 300);
 	}
 	else if ($(event.target).hasClass('hero__pet-button--kenni')) {
 		checkImg(event);
@@ -117,7 +117,7 @@ petList.on('click', petButton, function (event) {
 			$('.hero__pet-button--lui').parent().css('order', '2');
 			$('.hero__pet-button--piter').parent().css('order', '3');
 			$('.hero__pet-button--kenni').parent().css('order', '4');
-		}, 300);
+		}, document.documentElement.clientWidth < 600 ? 0 : 300);
 	}
 	else if ($(event.target).hasClass('hero__pet-button--sarah')) {
 		checkImg(event);
@@ -130,6 +130,6 @@ petList.on('click', petButton, function (event) {
 			$('.hero__pet-button--piter').parent().css('order', '2');
 			$('.hero__pet-button--kenni').parent().css('order', '3');
 			$('.hero__pet-button--sarah').parent().css('order', '4');
-		}, 300);
+		}, document.documentElement.clientWidth < 600 ? 0 : 300);
 	}
 })	

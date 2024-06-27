@@ -30,6 +30,7 @@ const allJS = [
 	"src/libs/just-validate.production.min.js",
 	"src/libs/just-validate-plugin-date.production.min.js",
 	"src/libs/slick.min.js",
+	"src/libs/inert.js",
 ]
 
 // Задачи
