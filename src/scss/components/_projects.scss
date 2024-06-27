@@ -1,6 +1,6 @@
 .projects {
 	padding: 90px 0;
-	color: var(--black-color);
+	color: $second;
 }
 
 .container {}
@@ -115,7 +115,7 @@
 	gap: 17px;
 	align-items: center;
 
-	color: var(--orange-color);
+	color: $first;
 	font-weight: 500;
 	max-width: max-content;
 
