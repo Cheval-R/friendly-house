@@ -13271,7 +13271,7 @@ async function initMap() {
   new YMapDefaultFeaturesLayer({})]);
   const mk = document.createElement('img');
   mk.className = 'icon-marker';
-  mk.src = './../img/footer/marker.svg';
+  mk.src = './img/footer/marker.svg';
   mk.setAttribute('alt', 'Маркер местоположения приюта по адресу Москва, Пятницкое шоссе, дом 28');
   map.addChild(new YMapMarker({
     coordinates: [37.374884, 55.847927]
