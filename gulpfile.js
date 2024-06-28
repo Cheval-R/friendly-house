@@ -66,6 +66,7 @@ const path = {
 			'src/js/hero-swap.js',
 			'src/js/map.js',
 			'src/js/slider.js',
+			'src/js/inert.js',
 		],
 		img: 'src/img/**/*.*',
 		svg: 'src/svg/**/*.svg',
