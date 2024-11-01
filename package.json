@@ -37,8 +37,12 @@
     "gulp-terser": "^2.1.0",
     "gulp-tinypng-compress": "^1.2.5",
     "gulp-webp": "^4.0.1",
+    "jpeg-recompress-bin": "^7.0.0",
+    "optipng-bin": "^9.0.0",
+    "pngquant-bin": "^9.0.0",
     "sass": "^1.64.2",
     "webpack": "^5.88.2",
-    "webpack-stream": "^7.0.0"
+    "webpack-stream": "^7.0.0",
+    "zopflipng-bin": "^7.1.0"
   }
 }
